@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumTest.SeleniumTest.NewTest">
+      <class name="SeleniumTest.SeleniumTest.gmail.tests.GMailTest">
         <methods>
-          <include name="f"/>
+          <include name="gmailTest"/>
         </methods>
-      </class> <!-- SeleniumTest.SeleniumTest.NewTest -->
+      </class> <!-- SeleniumTest.SeleniumTest.gmail.tests.GMailTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
