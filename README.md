@@ -8,3 +8,6 @@ This repository contains examples of Test Automation that Pladema uses in his pr
 
 ![](Automation.png)
   
+#Tutorial
+
+Just Run "Texts.xml" as TestNg Suite
