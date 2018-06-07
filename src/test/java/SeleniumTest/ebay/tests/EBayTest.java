@@ -15,7 +15,7 @@ public class EBayTest extends CommonTest{
 	private ProductPage productPage;
 	
 	@BeforeMethod
-	private void before() {
+	public void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\eclipse-workspace\\SeleniumTest\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://www.ebay.com");

@@ -13,10 +13,8 @@ public class GMailTest extends CommonTest{
 	private LoginPage loginPage;
 	private MainPage mainPage;
 	
-	
-	
 	@BeforeMethod
-	private void before() {
+	public void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\eclipse-workspace\\SeleniumTest\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/gmail");

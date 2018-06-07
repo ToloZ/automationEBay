@@ -12,7 +12,7 @@ public class FailedLoginTest extends CommonTest{
 	private LoginPage loginPage;
 	
 	@BeforeMethod
-	private void before() {
+	public void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\eclipse-workspace\\SeleniumTest\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.google.com/gmail");

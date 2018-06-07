@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 
-public class CommonTest {
+public abstract class CommonTest {
 	
 	protected WebDriver driver;
 	
@@ -19,6 +19,8 @@ public class CommonTest {
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
+	
+	public abstract void before();
 	
 	@AfterMethod()
 	public void destroy() {
