@@ -1,75 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17776" started-at="2018-06-06T20:56:35Z" finished-at="2018-06-06T20:56:52Z">
+  <suite name="Suite" duration-ms="35530" started-at="2018-06-07T18:01:42Z" finished-at="2018-06-07T18:02:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="17776" started-at="2018-06-06T20:56:35Z" finished-at="2018-06-06T20:56:52Z">
+    <test name="Test" duration-ms="35530" started-at="2018-06-07T18:01:42Z" finished-at="2018-06-07T18:02:18Z">
       <class name="SeleniumTest.gmail.tests.GMailTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="before" is-config="true" duration-ms="4384" started-at="2018-06-06T17:56:42Z" finished-at="2018-06-06T17:56:46Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@cb5822]" name="before" is-config="true" duration-ms="4497" started-at="2018-06-07T15:01:58Z" finished-at="2018-06-07T15:02:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="gmailTest()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="gmailTest" duration-ms="5297" started-at="2018-06-06T17:56:46Z" finished-at="2018-06-06T17:56:52Z">
+        <test-method status="PASS" signature="gmailTest()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@cb5822]" name="gmailTest" duration-ms="7035" started-at="2018-06-07T15:02:03Z" finished-at="2018-06-07T15:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gmailTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="destroy" is-config="true" duration-ms="806" started-at="2018-06-06T17:56:52Z" finished-at="2018-06-06T17:56:52Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@cb5822]" name="destroy" is-config="true" duration-ms="803" started-at="2018-06-07T15:02:10Z" finished-at="2018-06-07T15:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
       </class> <!-- SeleniumTest.gmail.tests.GMailTest -->
-      <class name="SeleniumTest.ebay.tests.EBayTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@482f8f11]" name="before" is-config="true" duration-ms="4974" started-at="2018-06-06T17:56:35Z" finished-at="2018-06-06T17:56:40Z">
+      <class name="SeleniumTest.gmail.tests.FailedLoginTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.FailedLoginTest@18be83e4]" name="before" is-config="true" duration-ms="4252" started-at="2018-06-07T15:02:10Z" finished-at="2018-06-07T15:02:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="ebayTest()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@482f8f11]" name="ebayTest" duration-ms="1497" started-at="2018-06-06T17:56:40Z" finished-at="2018-06-06T17:56:41Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="gmailTest()[pri:0, instance:SeleniumTest.gmail.tests.FailedLoginTest@18be83e4]" name="gmailTest" duration-ms="2405" started-at="2018-06-07T15:02:15Z" finished-at="2018-06-07T15:02:17Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".srp-results > li:nth-child(2) .s-item__link"}
-  (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-12QFEO0', ip: '192.168.7.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Usuario\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: cc64544e76e5207e4e7cc0deeaa0228d
-*** Element info: {Using=css selector, value=.srp-results > li:nth-child(2) .s-item__link}]]>
+              <![CDATA[Login Failed expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".srp-results > li:nth-child(2) .s-item__link"}
-  (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-12QFEO0', ip: '192.168.7.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Usuario\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: cc64544e76e5207e4e7cc0deeaa0228d
-*** Element info: {Using=css selector, value=.srp-results > li:nth-child(2) .s-item__link}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:411)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
-	at SeleniumTest.ebay.pages.ResultPage.clickElementResultAtIndex(ResultPage.java:16)
-	at SeleniumTest.ebay.tests.EBayTest.ebayTest(EBayTest.java:30)
+              <![CDATA[java.lang.AssertionError: Login Failed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertFalse(Assert.java:63)
+	at SeleniumTest.gmail.tests.FailedLoginTest.gmailTest(FailedLoginTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,11 +62,25 @@ Session ID: cc64544e76e5207e4e7cc0deeaa0228d
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gmailTest -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.FailedLoginTest@18be83e4]" name="destroy" is-config="true" duration-ms="804" started-at="2018-06-07T15:02:17Z" finished-at="2018-06-07T15:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- SeleniumTest.gmail.tests.FailedLoginTest -->
+      <class name="SeleniumTest.ebay.tests.EBayTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@1593948d]" name="before" is-config="true" duration-ms="5296" started-at="2018-06-07T15:01:42Z" finished-at="2018-06-07T15:01:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="ebayTest()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@1593948d]" name="ebayTest" duration-ms="9604" started-at="2018-06-07T15:01:48Z" finished-at="2018-06-07T15:01:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ebayTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@482f8f11]" name="destroy" is-config="true" duration-ms="805" started-at="2018-06-06T17:56:41Z" finished-at="2018-06-06T17:56:42Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@1593948d]" name="destroy" is-config="true" duration-ms="816" started-at="2018-06-07T15:01:57Z" finished-at="2018-06-07T15:01:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->

@@ -5,6 +5,7 @@
     <classes>
      <class name="SeleniumTest.ebay.tests.EBayTest"/>
      <class name="SeleniumTest.gmail.tests.GMailTest"/>
+     <class name="SeleniumTest.gmail.tests.FailedLoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

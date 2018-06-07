@@ -1,6 +1,7 @@
 package SeleniumTest.ebay.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -13,6 +14,10 @@ public class ResultPage {
 	}
 	
 	public void clickElementResultAtIndex(int i) {
-		driver.findElement(By.cssSelector(".srp-results > li:nth-child("+(i+1)+") .s-item__link")).click();
+		try {
+			driver.findElement(By.cssSelector(".srp-results > li:nth-child("+(i+1)+") .s-item__link")).click();
+		} catch (NoSuchElementException e) {
+			driver.findElement(By.cssSelector("#ListViewInner > li:nth-child("+i+") .vip")).click();
+		}			
 	}
 }

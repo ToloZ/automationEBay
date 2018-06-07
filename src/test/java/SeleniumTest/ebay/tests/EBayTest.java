@@ -27,6 +27,7 @@ public class EBayTest extends CommonTest{
 		eBayMainPage.setInputSearch("Electric Guitar");
 		
 		resultPage = new ResultPage(driver);
+		//waitVisible(resultPage.getResultAtIndex(1), driver);
 		resultPage.clickElementResultAtIndex(1);
 		
 		productPage = new ProductPage(driver);

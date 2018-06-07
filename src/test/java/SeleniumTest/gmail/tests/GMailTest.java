@@ -19,12 +19,14 @@ public class GMailTest extends CommonTest{
 	private void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\eclipse-workspace\\SeleniumTest\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://www.gmail.com");
+		driver.get("https://www.google.com/gmail");
 	}
 	
 	@Test
 	public void gmailTest() {
 		loginPage= new LoginPage(driver);
+		waitVisible(loginPage.getSignIn(), driver);
+		loginPage.clickSignIn();
 		waitVisible(loginPage.getMailElement(), driver);
 		loginPage.setMail("seleniumpladema");
 		loginPage.clickIdNext();

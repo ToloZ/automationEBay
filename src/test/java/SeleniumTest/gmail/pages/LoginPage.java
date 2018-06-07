@@ -1,5 +1,6 @@
 package SeleniumTest.gmail.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 	WebDriver driver;
 
+	@FindBy(css="a[data-g-label='Sign in']")
+	WebElement signIn;
+	
 	@FindBy(css="input[type='email']")
 	WebElement inputEmail;
 	
@@ -23,6 +27,18 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+	}
+
+	public boolean isAlertaDisplayed() {
+		return driver.findElement(By.cssSelector("[data-allow-at-sign] [aria-atomic]")).isDisplayed();
+	}
+	
+	public boolean isSignInDisplayed() {
+		return signIn.isDisplayed();
+	}
+	
+	public void clickSignIn() {
+		signIn.click();
 	}
 	
 	public void clickIdNext() {
@@ -46,5 +62,13 @@ public class LoginPage {
 	
 	public WebElement getMailElement() {
 		return inputEmail;
+	}
+	
+	public WebElement getSignIn() { 
+		return signIn;
+	}
+
+	public WebElement getAlerta() {
+		return driver.findElement(By.cssSelector("[data-allow-at-sign] [aria-atomic]"));
 	}
 }

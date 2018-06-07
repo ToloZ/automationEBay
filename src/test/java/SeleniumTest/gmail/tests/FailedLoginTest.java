@@ -15,19 +15,18 @@ public class FailedLoginTest extends CommonTest{
 	private void before() {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Usuario\\eclipse-workspace\\SeleniumTest\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://www.gmail.com");
+		driver.get("https://www.google.com/gmail");
 	}
-	
+
 	@Test
 	public void gmailTest() {
 		loginPage= new LoginPage(driver);
+		waitVisible(loginPage.getSignIn(), driver);
+		loginPage.clickSignIn();
 		waitVisible(loginPage.getMailElement(), driver);
-		loginPage.setMail("seleniumpladema");
+		loginPage.setMail("seleniumplademaaaaaaa");
 		loginPage.clickIdNext();
-		waitVisible(loginPage.getPasswordElement(), driver);
-		loginPage.setPassword("Pladema2018");
-		loginPage.clickPasswordNext();		
-		
-		Assert.assertTrue(true,"Login Failed");
+		waitVisible(loginPage.getAlerta(), driver);
+		Assert.assertFalse(loginPage.isAlertaDisplayed(),"Login Failed");
 	}
 }
