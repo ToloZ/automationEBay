@@ -21,7 +21,7 @@ public class GMailTest extends CommonTest{
 	}
 	
 	@Test
-	public void gmailTest() {
+	public void gmailAccountTest() {
 		loginPage= new LoginPage(driver);
 		waitVisible(loginPage.getSignIn(), driver);
 		loginPage.clickSignIn();
@@ -36,5 +36,17 @@ public class GMailTest extends CommonTest{
 		waitVisible(mainPage.getEmailIcon(), driver);
 		
 		Assert.assertTrue(mainPage.loginSuccess(),"Login Failed");
+	}
+	
+	@Test(dependsOnMethods = { "gmailAccountTest" })
+	public void failedLoginTest() {
+		loginPage= new LoginPage(driver);
+		waitVisible(loginPage.getSignIn(), driver);
+		loginPage.clickSignIn();
+		waitVisible(loginPage.getMailElement(), driver);
+		loginPage.setMail("seleniumplademaaaaaaa");
+		loginPage.clickIdNext();
+		waitVisible(loginPage.getAlerta(), driver);
+		Assert.assertFalse(loginPage.isAlertaDisplayed(),"Login Failed");
 	}
 }

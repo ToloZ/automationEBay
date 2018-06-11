@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="SeleniumTest.ebay.tests.EBayTest">
-        <methods>
-          <include name="destroy"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- SeleniumTest.ebay.tests.EBayTest -->
-      <class name="SeleniumTest.gmail.tests.FailedLoginTest">
-        <methods>
-          <include name="gmailTest"/>
-          <include name="destroy"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- SeleniumTest.gmail.tests.FailedLoginTest -->
       <class name="SeleniumTest.gmail.tests.GMailTest">
         <methods>
           <include name="destroy"/>
           <include name="before"/>
+          <include name="gmailAccountTest"/>
+          <include name="failedLoginTest"/>
         </methods>
       </class> <!-- SeleniumTest.gmail.tests.GMailTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
