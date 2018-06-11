@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22108" started-at="2018-06-11T15:54:22Z" finished-at="2018-06-11T15:54:44Z">
+  <suite name="Suite" duration-ms="36688" started-at="2018-06-11T15:56:24Z" finished-at="2018-06-11T15:57:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22108" started-at="2018-06-11T15:54:22Z" finished-at="2018-06-11T15:54:44Z">
+    <test name="Test" duration-ms="36688" started-at="2018-06-11T15:56:24Z" finished-at="2018-06-11T15:57:00Z">
       <class name="SeleniumTest.gmail.tests.GMailTest">
-        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@1593948d]" name="before" is-config="true" duration-ms="4375" started-at="2018-06-11T12:54:22Z" finished-at="2018-06-11T12:54:26Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="before" is-config="true" duration-ms="3982" started-at="2018-06-11T12:56:39Z" finished-at="2018-06-11T12:56:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="gmailAccountTest()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@1593948d]" name="gmailAccountTest" duration-ms="9327" started-at="2018-06-11T12:54:26Z" finished-at="2018-06-11T12:54:36Z">
+        <test-method status="PASS" signature="gmailAccountTest()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="gmailAccountTest" duration-ms="8973" started-at="2018-06-11T12:56:43Z" finished-at="2018-06-11T12:56:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gmailAccountTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@1593948d]" name="destroy" is-config="true" duration-ms="837" started-at="2018-06-11T12:54:36Z" finished-at="2018-06-11T12:54:36Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="destroy" is-config="true" duration-ms="836" started-at="2018-06-11T12:56:52Z" finished-at="2018-06-11T12:56:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
-        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@1593948d]" name="before" is-config="true" duration-ms="4142" started-at="2018-06-11T12:54:36Z" finished-at="2018-06-11T12:54:41Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="before" is-config="true" duration-ms="3953" started-at="2018-06-11T12:56:52Z" finished-at="2018-06-11T12:56:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="FAIL" signature="failedLoginTest()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@1593948d]" name="failedLoginTest" duration-ms="2610" started-at="2018-06-11T12:54:41Z" depends-on-methods="SeleniumTest.gmail.tests.GMailTest.gmailAccountTest" finished-at="2018-06-11T12:54:43Z">
+        <test-method status="FAIL" signature="failedLoginTest()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="failedLoginTest" duration-ms="3132" started-at="2018-06-11T12:56:56Z" depends-on-methods="SeleniumTest.gmail.tests.GMailTest.gmailAccountTest" finished-at="2018-06-11T12:57:00Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Login Failed expected [false] but found [true]]]>
@@ -64,11 +64,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- failedLoginTest -->
-        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@1593948d]" name="destroy" is-config="true" duration-ms="793" started-at="2018-06-11T12:54:43Z" finished-at="2018-06-11T12:54:44Z">
+        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.gmail.tests.GMailTest@8bd1b6a]" name="destroy" is-config="true" duration-ms="793" started-at="2018-06-11T12:57:00Z" finished-at="2018-06-11T12:57:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroy -->
       </class> <!-- SeleniumTest.gmail.tests.GMailTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="SeleniumTest.ebay.tests.EBayTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@482f8f11]" name="before" is-config="true" duration-ms="9316" started-at="2018-06-11T12:56:24Z" finished-at="2018-06-11T12:56:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="ebayTest()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@482f8f11]" name="ebayTest" duration-ms="4871" started-at="2018-06-11T12:56:33Z" finished-at="2018-06-11T12:56:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ebayTest -->
+        <test-method status="PASS" signature="destroy()[pri:0, instance:SeleniumTest.ebay.tests.EBayTest@482f8f11]" name="destroy" is-config="true" duration-ms="821" started-at="2018-06-11T12:56:38Z" finished-at="2018-06-11T12:56:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- SeleniumTest.ebay.tests.EBayTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
